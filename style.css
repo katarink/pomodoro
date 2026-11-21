@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('fonts/Minecraft.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.tomato {
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+}
+
+h1 {
+    font-family: 'Minecraft';
+}
+
+.controls {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#time {
+    display: inline-block;
+    font-family: 'Minecraft';
+    font-size: 60px;
+    width: 5ch;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 20px;
+}
+
+.button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button:focus-visible {
+    outline: 2px solid #333;
+    outline-offset: 4px;
+}
+
+.time-adjust-button {
+    width: 44px;
+    height: 60px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.minus-button {
+    background-image: url('img/minus-button.png');
+}
+
+.minus-button.is-pressed {
+    background-image: url('img/minus-button-pressed.png');
+}
+
+.plus-button {
+    background-image: url('img/plus-button.png');
+}
+
+.plus-button.is-pressed {
+    background-image: url('img/plus-button-pressed.png');
+}
+
+.timer-button {
+    display: block;
+    width: 150px;
+    height: 100px;
+}
+
+.start-button {
+    background: transparent url('img/start-button.png') center / cover no-repeat;
+}
+
+.start-button.is-pressed {
+    background-image: url('img/start-button-pressed.png');
+}
+
+.stop-button {
+    display: none;
+    background: transparent url('img/stop-button.png') center / cover no-repeat;
+}
+
+.stop-button.is-pressed {
+    background-image: url('img/stop-button-pressed.png');
+}
+
+.controls.is-running .start-button {
+    display: none;
+}
+
+.controls.is-running .stop-button {
+    display: block;
+}

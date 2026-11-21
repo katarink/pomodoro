@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    >
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    >
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <h1 id="main-text">Welcome to Pomodoro timer!</h1>
+    <img src="img/tomato1.png" alt="tomato pixel art" class="tomato">
+    <div class="controls">
+        <div class="time-controls">
+          <button id="minus" class="button time-adjust-button minus-button" aria-label="Decrease timer by 5 minutes"></button>
+          <span id="time">25:00</span>
+          <button id="plus" class="button time-adjust-button plus-button" aria-label="Increase timer by 5 minutes"></button>
+        </div>
+        <button id="start" class="button timer-button start-button" aria-label="Start timer"></button>
+        <button id="stop" class="button timer-button stop-button" aria-label="Pause timer"></button>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
