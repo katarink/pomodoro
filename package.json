@@ -1,5 +1,5 @@
 {
-  "name": "pomodoro",
+  "name": "Pomodoro",
   "version": "1.0.0",
   "description": "a simple and cute pomodoro timer app :3",
   "main": "main.js",
@@ -9,7 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "author": "katarinka",
+  "author": "katarink",
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^8.0.1",
@@ -24,7 +24,7 @@
   },
   "build": {
     "mac": {
-      "icon": "img/tomato1.icns"
+      "icon": "img/tomato1_cropped_upscale.icns"
     }
   },
   "dependencies": {

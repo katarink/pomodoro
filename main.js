@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron')
-const path = require('node:path');
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -11,11 +10,6 @@ const createWindow = () => {
 }
 
 app.whenReady().then(() => {
-
-  if (process.platform === 'darwin') {
-    app.dock.setIcon(path.join(__dirname, 'img/tomato1.png'));
-  }
-
   createWindow()
 
   app.on('activate', () => {

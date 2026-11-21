@@ -1,10 +1,11 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+const path = require('path');
 
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: 'img/tomato_cropped_upscale.icns',
+    icon: path.resolve(__dirname, 'img/tomato1_cropped_upscale.icns'),
   },
   rebuildConfig: {},
   makers: [
